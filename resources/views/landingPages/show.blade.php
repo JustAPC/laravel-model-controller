@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('title', 'Movie')
+
 @section('content')
-    <div>Ciao</div>
+    <div class="container">
+        <img src="{{ $movie->img }}" alt="" class="movie-img">
+    </div>
 @endsection

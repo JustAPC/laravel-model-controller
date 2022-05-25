@@ -12,13 +12,13 @@ class PageController extends Controller
     {
         $movies = Movie::all();
 
-        return view('landingPages.index', compact('movie'));
+        return view('landingPages.index', compact('movies'));
     }
 
     public function show($id)
     {
 
-        $movies = Movie::findOrFail($id);
+        $movie = Movie::findOrFail($id);
 
         return view('landingPages.show', compact('movie'));
     }
