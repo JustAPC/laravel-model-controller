@@ -17,9 +17,9 @@ class PageController extends Controller
 
     public function show($id)
     {
-
+        $movies = Movie::all();
         $movie = Movie::findOrFail($id);
 
-        return view('landingPages.show', compact('movie'));
+        return view('landingPages.show', compact('movie', 'movies'));
     }
 }

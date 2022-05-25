@@ -27,4 +27,14 @@
 .movie-img {
   height: 300px;
   width: 230px;
+  box-shadow: 0px 0px 40px #fff;
+  -moz-box-shadow: 0px 0px 40px #fff;
+  -webkit-box-shadow: 0px 0px 40px #fff;
+  -khtml-box-shadow: 0px 0px 40px #fff;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/3968079.jpg");
+  background-size: cover;
+  background-position: center;
 }
